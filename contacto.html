@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Img/SVG/favicon.svg" type="image/x-icon">
+        <!-- favicon -->
+        <title>Contacto</title>
+        <link rel="stylesheet" href="stylesheets/contacto.css">
+        <link rel="stylesheet" href="stylesheets/base.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Img/logos/logoNegro.png" alt="Logo">
+                    </a>
+                </div>
+                <a href="login.html">
+                    <button class="loginButton">
+                        Iniciar sesión
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </a>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle" id="menu-btn">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="index.html">Inicio</a></li>
+                        <li><a class="menu__item" href="cursos.html">Cursos</a></li>
+                        <li><a class="menu__item" href="precios.html">Precios</a></li>
+                        <li><a class="menu__item" href="contacto.html"
+                                id="active-box">Contacto</a></li>
+                        <li><a class="menu__item" href="login.html">Iniciar
+                                sesión</a></li>
+                    </ul>
+                </div>
+                <script src="JavaScript/dontScroll.js"></script>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="precios.html">Precios</a></li>
+                <li><a href="contacto.html" id="actualPage">Contacto</a></li>
+                <li class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit">Buscar</button>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="card">
+                <h1>Información de contacto</h1>
+                <div class="card__content">
+                    <p class="card__title">Información de contacto</p>
+                    <p class="card__description">
+                        <strong>Correo Electrónico:</strong>
+                        info@tothallylearning.com <br>
+                        <strong>Teléfono:</strong> +34 986 456 790 <br>
+                        <strong>Horario de Atención:</strong> Lunes a Viernes,
+                        9:00 am - 5:00 pm (UTC+1) <br>
+                        <br>
+                        <strong>Redes Sociales:</strong> <br>
+
+                        <strong>Facebook:</strong> facebook.com/tothallylearning
+                        <br>
+                        <strong>Twitter:</strong> twitter.com/tothallylearning
+                        <br>
+                        <strong>Instagram:</strong>
+                        instagram.com/tothallylearning <br>
+                    </p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <span class="heading">Envíanos un mensaje:</span>
+                <br>
+                <form>
+                    <label for="name">Nombre:</label>
+                    <input type="text" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Escribe un mensaje:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button>
+                        <div class="svg-wrapper-1">
+                            <div class="svg-wrapper">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    width="24"
+                                    height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                        fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Enviar</span>
+                    </button>
+
+                </form>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="footer-logo">
+                <img id="footerLogo" src="Img/logos/logoTblanco.png"
+                    alt="Logo Footer">
+            </div>
+
+            <div class="footer-links">
+                <h3>ENLACES</h3>
+                <a href="index.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="precios.html">Precios</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="social-media">
+                <h3>REDES SOCIALES</h3>
+                <a href="https://www.instagram.com/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png"
+                        alt="Instagram"></a>
+                <a href="https://www.facebook.com"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+                        alt="Facebook"></a>
+                <a href="https://twitter.com"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png"
+                        alt="Twitter"></a>
+                <a href="https://www.tiktok.com"><img
+                        src="https://assets.stickpng.com/thumbs/5cb78671a7c7755bf004c14b.png"
+                        alt="TikTok"></a>
+            </div>
+
+            <form class="newsletter-form">
+                <h3>NUESTRA NEWSLETTER</h3>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo electrónico">
+                <input type="submit" value="Suscribirse">
+            </form>
+        </footer>
+
+    </body>
+</html>

@@ -1,0 +1,120 @@
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    /* Establecer el radio de borde */
+    overflow: hidden;
+    /* Para que el borde redondeado se aplique correctamente */
+    margin-bottom: 40px;
+  }
+
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #4c4c4c;
+  }
+
+  th {
+    background-color: rgb(97, 97, 97);
+    color: white;
+  }
+
+  tr {
+    background-color: rgb(15, 15, 15);
+    color: white;
+  }
+
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+  
+  .course {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    width: 45%; /* Ancho del 50% para ocupar la mitad del contenedor */
+    padding: 10px; /* Espaciado interno para los elementos */
+    border-radius: 5px;
+  }
+  
+  /* Selecciona el primer y segundo artículo para mostrar en línea */
+  .course:nth-child(-n+2) {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    width: 45%; /* Cambia el ancho para ocupar toda la línea */
+  }
+  
+
+  .course h2 {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #27ae60;
+  }
+
+  aside {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 15px;
+    width: 25%;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 830px) {
+    
+  .courses {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 50px;
+    width: 100%;
+  }
+  
+  .course {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    width: 100%; /* Ancho del 50% para ocupar la mitad del contenedor */
+    padding: 10px; /* Espaciado interno para los elementos */
+    border-radius: 5px;
+  }
+  
+  /* Selecciona el primer y segundo artículo para mostrar en línea */
+  .course:nth-child(-n+2) {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    width: 100%; /* Cambia el ancho para ocupar toda la línea */
+  }
+  
+
+  .course h2 {
+    margin-top: 0;
+    margin-bottom: 4px;
+  }
+
+  .price {
+    font-weight: bold;
+    color: #27ae60;
+  }
+
+  aside {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border-radius: 5px;
+  }
+  }

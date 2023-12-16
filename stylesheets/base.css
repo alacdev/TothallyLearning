@@ -1,0 +1,434 @@
+/*Fuentes*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  /* Add your background pattern here */
+  background-color: #313131;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.171) 2px,
+      transparent 0);
+  background-size: 30px 30px;
+  background-position: -5px -5px;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* Estilos del header */
+header {
+  background-color: #f2f2f27f;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 80px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header-content a {
+  text-decoration: none;
+}
+
+.logo img {
+  background-color: transparent;
+  width: 100px;
+  /* Ajusta el ancho de tu logo */
+  height: auto;
+  filter: drop-shadow(1px 2px 8px white);
+}
+
+/* Botón inicio de sesión*/
+.loginButton {
+  text-decoration: none;
+  background: #4d4d4d;
+  color: white;
+  padding-left: 1.2em;
+  font-size: 18px;
+  font-weight: 1000;
+  border-radius: 0.9em;
+  border: none;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.loginButton .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #4d4d4d;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.loginButton:hover .icon {
+  width: calc(100% - 0.6em);
+  background: linear-gradient(to right, white, #b3ccff);
+}
+
+.loginButton .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #4d4d4d;
+}
+
+.loginButton:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.loginButton:active .icon {
+  transform: scale(0.95);
+}
+
+.hamburguesa {
+  display: none;
+}
+
+/* Estilos del nav */
+nav {
+  text-align: center;
+  font-weight: bold;
+  height: auto;
+  background-color: #f2f2f27f;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 10px 0;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.nav-links a:hover {
+  text-shadow: 8px 8px 16px #0609cd;
+  color: #b3ccff;
+  border-bottom: 2px solid #b3ccff;
+  padding-bottom: 5px;
+}
+
+.nav-links #actualPage {
+  text-shadow: 8px 8px 16px #b3ccff;
+  color: #5676FF;
+}
+
+/*Estilos de la barra de búsqueda */
+.search-bar {
+  display: flex;
+}
+
+.search-bar input[type="text"] {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #b3ccff;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  margin-left: 5px;
+  background-color: #b3ccff;
+  color: #0609cd;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hamburger-menu {
+  visibility: hidden;
+  display: none;
+}
+
+main {
+  min-height: calc(100vh - 137px);
+}
+
+
+/*FOOTER*/
+footer {
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  min-height: 100px;
+  /* Fijar el footer al final de la página */
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Estilos para los enlaces y redes sociales */
+.footer-links,
+.social-media,
+.newsletter-form {
+  /* Espaciado entre secciones del footer */
+  margin-bottom: 15px;
+  height: 100%;
+}
+
+.footer-links,
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a {
+  display: block;
+  /* Hace que los enlaces ocupen todo el ancho */
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links a:hover {
+  color: #b3ccff;
+  text-shadow: 2px 2px 4px #0609cd;
+}
+
+/* Estilos para los enlaces y redes sociales */
+footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+footer ul li {
+  margin-right: 20px;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-logo {
+  align-self: center;
+}
+
+/* Estilos para la imagen del footer */
+.footer-logo img {
+  align-self: center;
+  padding-left: 40px;
+  width: 120px;
+  /* Ajusta el tamaño según la imagen */
+}
+
+#footerLogo {
+  text-shadow: 5px 5px 10px rgba(255, 255, 255);
+}
+
+.social-media img {
+  width: 60px;
+  padding: 20px;
+}
+
+.footer-links h3,.social-media h3 ,.newsletter-form h3 {
+  text-align: left;
+  align-items: first baseline;
+}
+
+/* Estilos para el formulario */
+.newsletter-form {
+  padding-right: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.newsletter-form input[type="text"],
+.newsletter-form input[type="email"] {
+  margin-bottom: 10px;
+  padding: 5px;  
+}
+
+.newsletter-form input[type="submit"] {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1080px) {
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer-logo,.footer-links,.social-media,.newsletter-form{
+    width: 40%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .newsletter-form input {
+    align-items: center;
+    margin-right: 40px;
+  }
+}
+
+
+@media (max-width: 800px) {
+  /* Ocultar el nav y el botón */
+  nav {
+    display: none;
+  }
+
+  .loginButton {
+    display: none;
+  }
+
+  /*Menú hamburguesa*/
+
+  .hamburger-menu {
+    display: block;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #menu__toggle {
+    opacity: 0;
+  }
+
+
+  #menu__toggle:checked {
+    overflow: hidden;
+  }
+
+  #menu__toggle:checked+.menu__btn>span {
+    transform: rotate(45deg);
+  }
+
+  #menu__toggle:checked+.menu__btn>span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+
+  #menu__toggle:checked+.menu__btn>span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu__toggle:checked~.menu__box {
+    right: 0 !important;
+  }
+
+  .menu__btn {
+    position: absolute;
+    top: 55px;
+    right: 65px;
+    width: 30px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 4;
+    padding: 10px;
+  }
+
+  .menu__btn>span,
+  .menu__btn>span::before,
+  .menu__btn>span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+
+  .menu__btn>span::before {
+    content: '';
+    top: -10px;
+  }
+
+  .menu__btn>span::after {
+    content: '';
+    top: 10px;
+  }
+
+  #menu__btn_checked {
+    position: fixed;
+  }
+
+  .menu__box {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 100%;
+    margin: 0;
+    padding: 103px 0;
+    z-index: 2;
+    list-style: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+
+  .menu__item:hover {
+    background-color: #EBE8E9;
+  }
+
+  .menu__item#active-box {
+    font-weight: bold;
+    color: white;
+    background-color: #B2B2B2;
+  }  
+
+
+  footer  h3 {
+    text-align: left;
+    align-items: first baseline ;
+  }
+
+  .social-media img {
+    width: 50px;
+    padding: 10px;
+  }
+
+  .footer-links a {
+    margin-right: 30px;
+  }
+}

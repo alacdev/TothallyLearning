@@ -1,0 +1,171 @@
+main {
+    margin: 60px;
+}
+
+/*Estilos de la info de contacto*/
+.card {
+    position: relative;
+    height: 230px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #4c4c4c80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 8px 16px rgba(96, 96, 96, 0.2);
+}
+
+.card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover .card__content {
+    transform: rotateX(0deg);
+}
+
+.card__title {
+    margin: 0;
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+
+.card:hover svg {
+    scale: 0;
+}
+
+.card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: white;
+    line-height: 1.4;
+}
+
+
+/*Estilos del formulario*/
+.contact-form {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form label {
+    color: white;
+}
+
+.contact-form .heading {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #5676FF;
+    transform: scale(1.015);
+    transition: transform 0.3s ease-in-out;
+}
+
+main button {
+    font-family: inherit;
+    font-size: 20px;
+    background: black;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #5676FF;
+}
+
+main button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.9s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.9s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(0.8em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(100em);
+}
+
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}
+

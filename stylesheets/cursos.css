@@ -1,0 +1,85 @@
+/* Estilos del mosaico */
+.mosaic-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1500px;
+  margin: 20px auto;
+}
+
+.card {
+  margin: 5px;
+  position: relative;
+  width: 300px;
+  background-color: rgb(15, 15, 15);
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 310px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #B3CCFF 0%, #5676FF 100%);
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.9s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #B3CCFF 0%, #0609CD 100%);
+  transform: translate3d(0, 0, 0) scale(0.9);
+  filter: blur(20px);
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-180deg);
+}
+
+
+.img {
+  width: 100%;
+  /* Ancho deseado del contenedor */
+  overflow: hidden;
+  /* Para ocultar partes de la imagen si es más grande que el contenedor */
+}
+
+.img img {
+  max-width: 100%;
+  /* Hace que la imagen se ajuste al 100% del ancho del contenedor */
+  height: 100%;
+  /* Mantiene la proporción original de la imagen */
+  display: block;
+  /* Evita espacios innecesarios debajo de la imagen */
+}
+
+
+@media (max-width: 1350px) {
+  .mosaic-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 700px;
+    margin: 20px auto;
+  }
+
+}

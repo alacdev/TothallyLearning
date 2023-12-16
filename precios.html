@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="Img/SVG/favicon.svg" type="image/x-icon">
+        <!-- favicon -->
+        <link rel="stylesheet" href="stylesheets/base.css">
+        <link rel="stylesheet" href="stylesheets/precios.css">
+        <title>Precios</title>
+    </head>
+    <body>
+        <header>
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="Img/logos/logoNegro.png" alt="Logo">
+                    </a>
+                </div>
+                <a href="login.html">
+                    <button class="loginButton">
+                        Iniciar sesión
+                        <div class="icon">
+                            <svg height="24" width="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"></path>
+                            </svg>
+                        </div>
+                    </button>
+                </a>
+                <div class="hamburger-menu">
+                    <input id="menu__toggle" type="checkbox" />
+                    <label class="menu__btn" for="menu__toggle" id="menu-btn">
+                        <span></span>
+                    </label>
+                    <ul class="menu__box">
+                        <li><a class="menu__item" href="index.html">Inicio</a></li>
+                        <li><a class="menu__item" href="cursos.html">Cursos</a></li>
+                        <li><a class="menu__item" href="precios.html"
+                                id="active-box">Precios</a></li>
+                        <li><a class="menu__item" href="contacto.html">Contacto</a></li>
+                        <li><a class="menu__item" href="login.html">Iniciar
+                                sesión</a></li>
+                    </ul>
+                </div>
+                <script src="JavaScript/dontScroll.js"></script>
+            </div>
+        </header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="precios.html" id="actualPage">Precios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li class="search-bar">
+                    <input type="text" placeholder="Buscar...">
+                    <button type="submit">Buscar</button>
+                </li>
+            </ul>
+        </nav>
+
+        <main>
+            <table>
+                <tr>
+                    <th>Curso</th>
+                    <th>Duración</th>
+                    <th>Precio</th>
+                </tr>
+                <tr>
+                    <td>Fullstack Development</td>
+                    <td>6 meses</td>
+                    <td>270€</td>
+                </tr>
+                <tr>
+                    <td>Frontend Development</td>
+                    <td>4 meses</td>
+                    <td>225€</td>
+                </tr>
+                <tr>
+                    <td>Ethical Hacking</td>
+                    <td>3 meses</td>
+                    <td>315€</td>
+                </tr>
+                <tr>
+                    <td>Fullstack Developer</td>
+                    <td>9 meses</td>
+                    <td>360€</td>
+                </tr>
+                <tr>
+                    <td>Personal Trainer</td>
+                    <td>12 semanas</td>
+                    <td>135€</td>
+                </tr>
+                <tr>
+                    <td>Suplementación Deportiva</td>
+                    <td>2 meses</td>
+                    <td>90€</td>
+                </tr>
+                <tr>
+                    <td>Nutrición Deportiva</td>
+                    <td>3 meses</td>
+                    <td>108€</td>
+                </tr>
+            </table>
+
+            <section class="courses">
+                <article class="course">
+                    <h2>Programación Web</h2>
+                    <span class="price">A distancia</span>
+                    <p>Aprende los fundamentos de desarrollo web, incluyendo
+                        HTML, CSS, y JavaScript para crear sitios web
+                        interactivos.</p>
+                </article>
+                <article class="course">
+                    <h2>Diseño gráfico</h2>
+                    <span class="price">Vigo, Galicia</span>
+                    <p>Explora los principios del diseño gráfico, desde la
+                        tipografía y el color hasta la composición visual y el
+                        software de diseño.</p>
+                </article>
+                <article class="course">
+                    <h2>Suplementación deportiva</h2>
+                    <span class="price">A distancia</span>
+                    <p>Descubre los conceptos básicos de la suplementación para
+                        mejorar el rendimiento deportivo y la recuperación
+                        muscular.</p>
+                </article>
+                <article class="course">
+                    <h2>Nutrición deportiva</h2>
+                    <span class="price">A distancia</span>
+                    <p>Aprende sobre la importancia de la nutrición en el ámbito
+                        deportivo y cómo diseñar dietas adecuadas para atletas.</p>
+                </article>
+                <article class="course">
+                    <h2>Personal Trainer</h2>
+                    <span class="price">A distancia</span>
+                    <p>Prepárate para ser un entrenador personal certificado,
+                        aprendiendo sobre ejercicios, anatomía y planificación
+                        de entrenamientos.</p>
+                </article>
+                <article class="course">
+                    <h2>Desarrollador Fullstack</h2>
+                    <span class="price">A Coruña, Galicia</span>
+                    <p>Conviértete en un desarrollador versátil, capaz de
+                        trabajar tanto en el lado del servidor como en el
+                        cliente para aplicaciones web completas.</p>
+                </article>
+                <article class="course">
+                    <h2>Desarrollador Frontend</h2>
+                    <span class="price">A distancia</span>
+                    <p>Enfócate en la parte visual y de interacción de las
+                        aplicaciones web, dominando HTML, CSS y JavaScript para
+                        el desarrollo frontend.</p>
+                </article>
+                <article class="course">
+                    <h2>Ethical Hacking</h2>
+                    <span class="price">A distancia</span>
+                    <p>Descubre cómo identificar vulnerabilidades de seguridad y
+                        proteger sistemas informáticos mediante técnicas éticas
+                        de hacking.</p>
+                </article>
+
+            </section>
+
+            <aside>
+                <h3>Ofertas especiales</h3>
+                <p>Descuento del 20% en todos los cursos este mes.</p>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="footer-logo">
+                <img id="footerLogo" src="Img/logos/logoTblanco.png"
+                    alt="Logo Footer">
+            </div>
+
+            <div class="footer-links">
+                <h3>ENLACES</h3>
+                <a href="index.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="precios.html">Precios</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="login.html">Login</a>
+            </div>
+
+            <div class="social-media">
+                <h3>REDES SOCIALES</h3>
+                <a href="https://www.instagram.com/"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/480px-Instagram_icon.png"
+                        alt="Instagram"></a>
+                <a href="https://www.facebook.com"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png"
+                        alt="Facebook"></a>
+                <a href="https://twitter.com"><img
+                        src="https://upload.wikimedia.org/wikipedia/commons/5/57/X_logo_2023_%28white%29.png"
+                        alt="Twitter"></a>
+                <a href="https://www.tiktok.com"><img
+                        src="https://assets.stickpng.com/thumbs/5cb78671a7c7755bf004c14b.png"
+                        alt="TikTok"></a>
+            </div>
+
+            <form class="newsletter-form">
+                <h3>NUESTRA NEWSLETTER</h3>
+                <input type="text" placeholder="Nombre">
+                <input type="email" placeholder="Correo electrónico">
+                <input type="submit" value="Suscribirse">
+            </form>
+        </footer>
+    </body>
+</html>
